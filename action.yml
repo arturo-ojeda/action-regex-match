@@ -1,4 +1,4 @@
-name: Actions Ecosystem Action Regex Match
+name: Actions Ecosystem Action Regex Match All
 description: Match a input text with a input regex.
 author: Actions Ecosystem
 inputs:
