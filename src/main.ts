@@ -7,8 +7,10 @@ async function run(): Promise<void> {
     const flags = core.getInput('flags');
 
     const re = new RegExp(regex, flags);
-
-    const result = re.exec(text);
+    
+    const result = text.match(re).join(" "); // re.exec(text);
+    core.setOutput('match', result);
+    return;
 
     if (result) {
       for (const [index, x] of result.entries()) {
